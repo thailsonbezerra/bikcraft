@@ -15,3 +15,5 @@
 
 /*Bicicletas*/
 @import "./bicicletas/bicicletas-listas.css";
+
+@import "termos/termos.css";
