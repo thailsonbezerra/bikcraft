@@ -2,6 +2,10 @@
   background: var(--cor-11);
 }
 
+#seguros .seguros {
+  padding-top: 0px;
+}
+
 .seguros {
   display: grid;
   gap: 40px;
