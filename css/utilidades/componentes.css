@@ -1,9 +1,3 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  /* padding: 0 20px; */
-}
-
 .botao {
   display: inline-block;
   padding: 16px 32px;
@@ -64,9 +58,20 @@
   .titulo-bg {
     padding: 40px 0;
   }
+
+  .titulo {
+    padding: 20px 0;
+  }
   .titulo p {
     font-size: 1rem;
     text-transform: lowercase;
     font-weight: 400;
   }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }

@@ -1,0 +1,142 @@
+.bicicletas {
+  padding: 40px 0;
+}
+
+.lista-bicicletas > li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 32px 0;
+}
+
+.lista-bicicletas > li:nth-child(even) {
+  background-color: var(--cor-11);
+  /* box-shadow: inset 20em 0 var(--cor-0), 5em 0 var(--cor-11); */
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+
+.lista-bicicletas > li:nth-child(even) h2 {
+  color: var(--cor-0);
+}
+
+.lista-bicicletas > li:nth-child(even) p,
+.lista-bicicletas > li:nth-child(even) ul {
+  color: var(--cor-5);
+}
+
+.bicicleta-imagem {
+  position: relative;
+}
+
+.bicicleta-imagem span {
+  background-color: var(--cor-12);
+  padding: 4px 16px;
+  border-radius: 4px 0px 0px 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+}
+
+.bicicleta-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bicicleta-conteudo h2 {
+  position: relative;
+}
+
+.bicicleta-conteudo h2::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.bicicleta-conteudo p {
+  padding-bottom: 12px;
+}
+
+.bicicleta-conteudo ul {
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.bicicleta-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 20px;
+}
+
+.bicicleta-info li {
+  display: flex;
+  gap: 0;
+}
+
+.bicicleta-info a {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  place-self: end;
+}
+
+.bicicleta-info a::after {
+  content: "";
+  background: url(/img/icones/seta.svg);
+  width: 18px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 12px;
+  transition: 0.2s;
+}
+
+.bicicleta-info a:hover::after {
+  transform: translateX(4px);
+}
+
+.bicicleta-info img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .lista-bicicletas {
+    padding: 0;
+  }
+
+  .lista-bicicletas > li {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-info {
+    padding: 0;
+  }
+
+  .lista-bicicletas > li > img,
+  .lista-bicicletas > li > div {
+    padding: 20px;
+  }
+
+  .lista-bicicletas > li:nth-child(even) {
+    background: var(--cor-11);
+  }
+
+  .bicicleta-info {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-info ul {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+
+  .bicicleta-info a {
+    place-self: start;
+  }
+}
