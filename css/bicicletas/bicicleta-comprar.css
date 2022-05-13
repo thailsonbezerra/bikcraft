@@ -1,0 +1,109 @@
+.bicicleta-bg {
+  background-color: var(--cor-11);
+}
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 120px;
+}
+
+.bicicleta h2 {
+  padding-bottom: 12px;
+}
+
+.bicicleta ul {
+  background-color: var(--cor-12);
+  border-radius: 4px;
+  padding: 32px;
+}
+
+.bicicleta-imagem > img {
+  margin-bottom: 20px;
+}
+
+.bicicleta-imagem-outros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bicicleta-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-content: center;
+  justify-items: start;
+  gap: 8px 12px;
+}
+
+.bicicleta-comprar a {
+  grid-row: span 2;
+  height: min-content;
+}
+
+.bicicleta-comprar span {
+  background-color: var(--cor-12);
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.bicicleta-lista-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.bicicleta-lista-info li {
+  display: flex;
+  flex-direction: column;
+}
+
+.bicicleta-lista-info li img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.bicicleta-ficha ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-11);
+  padding: 4px;
+}
+
+@media (max-width: 940px) {
+  .bicicleta-imagem-outros {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-imagem {
+    grid-row: 2;
+  }
+
+  .bicicleta-imagem-outros {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bic {
+    text-transform: uppercase !important;
+  }
+}
