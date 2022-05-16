@@ -51,7 +51,7 @@
 
 .seguros div li::before {
   content: "";
-  background: url(/img/icones/lista.svg);
+  background: url(../img/icones/lista.svg);
   width: 13px;
   height: 9px;
   display: inline-block;

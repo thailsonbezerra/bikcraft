@@ -31,7 +31,7 @@
 
 .lista-perguntas li h3::after {
   content: "";
-  background-image: url(/img/icones/seta-abrir.svg);
+  background-image: url(../img/icones/seta-abrir.svg);
   background-repeat: no-repeat;
   width: 14px;
   height: 6px;
