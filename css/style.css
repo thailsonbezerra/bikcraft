@@ -20,5 +20,9 @@
 @import "./bicicletas/bicicleta-comprar.css";
 @import "termos/termos.css";
 
+/*Bicicleta*/
+@import "/css/bicicleta/bicicleta.css";
+@import "bicicleta/seguro.css";
+
 @import "seguros/vantagens.css";
 @import "seguros/perguntas.css";
