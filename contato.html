@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="contato">
   <header class="header-bg">
     <div class="container header">
       <a href="../">
@@ -33,8 +33,51 @@
     </div>
 
     <div class="container contato">
+      <section class="contato-info font-2-s cor-4">
+        <h2 class=" font-1-m cor-0">Loja Online</h2>
+        <div class="contato-endereco">
+          <p class="icon"> Rua Ali Perto, 35 </p>
+          <p>Rio de Janeiro - RJ </p>
+          <p>Brasil - Terra - Vita Láctea </p>
+        </div>
 
+        <address class="contato-meios">
+          <a class="icon">contato@bikcraft.com</a>
+          <a>assistencia@bikcraft.com</p>
+            <a class="icon">+55 21 9999-9999</a>
+        </address>
+
+        <div class="contato-redes">
+          <img src="img/redes/instagram-p.svg" alt="">
+          <img src="img/redes/facebook-p.svg" alt="">
+          <img src="img/redes/youtube-p.svg" alt="">
+        </div>
+      </section>
+
+      <section class="contato-formulario">
+        <form class="form" action="#">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome">
+          </div>
+
+          <div>
+            <label for="nome">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="(21) 9999-9999">
+          </div>
+          <div class="col-2">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="contato@email.com">
+          </div>
+          <div class="col-2">
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" rows=" 5" placeholder="O que você precisa?"></textarea>
+          </div>
+          <button class="botao col-2">enviar mensagem</button>
+        </form>
+      </section>
     </div>
+
 
   </main>
 
