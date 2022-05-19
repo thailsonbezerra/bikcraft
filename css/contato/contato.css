@@ -38,6 +38,7 @@
   padding: 0 28px;
   align-items: center;
   margin-bottom: 4px;
+  font-style: normal;
 }
 
 .icon {
@@ -60,6 +61,11 @@
 }
 .contato-meios a:last-child::before {
   background-image: url("/img/icones/telefone.svg");
+}
+
+.contato-meios a:hover {
+  color: var(--cor-0);
+  cursor: pointer;
 }
 
 .contato-meios a:last-child {
