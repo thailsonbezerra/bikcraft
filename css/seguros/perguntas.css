@@ -51,13 +51,13 @@
   transform: rotate(180deg);
 }
 
-.lista-perguntas li p {
+.js .lista-perguntas li p {
   max-width: 80ch;
   margin-left: 22px;
   display: none;
 }
 
-.lista-perguntas li p.ativo {
+.js .lista-perguntas li p.ativo {
   display: block;
 }
 
