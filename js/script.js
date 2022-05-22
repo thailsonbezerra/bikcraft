@@ -55,3 +55,7 @@ function handleImgPrimaria(event) {
 imgOutras.forEach((img) => {
   img.addEventListener("click", handleImgPrimaria);
 });
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
